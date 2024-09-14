@@ -4,44 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PO 2402</title>
+    <style>
+        body    {
+            margin: 2%;
+            display: block;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 95%;
+        }
+        .logo   {
+            width: 20%;
+            float: left;
+            
+            
+        }
+        #nav    {
+            display: block;
+        }
+        main    {
+            margin-top: 13%;
+        }
+            /* пары*/
+            #para   {
+                border: 1px solid black;
+            }
+            #first  {
+                border-bottom: 1px solid black;
+            }
+            #second {
+                border-bottom: 1px solid black;
+            }
+            #third  {
+                border-bottom: 1px solid black;
+            }
+            #fourth {
+                border-bottom: 0px solid black;
+            }
+
+        #schedule   {
+            display: block;
+            margin: 5%;
+            margin-top: 25%;
+        }
+        /*#scheduletxt    {
+            margin: 0%;
+            position: absolute;
+            left: 10%;
+            top: 15%;
+        } */
+
+    </style>
 </head>
 <body>
 
     <header>
-        <h1>Kundelik PO 2402</h1>
+        <nav id="nav">
+            <img class="logo" src="https://admin.vipusknik.kz/storage/3008/unnamedjpg.jpeg">
+            <a href="#home">Главная</a>
+            <a href="#schedule">Рассписание</a>
+            <a href="#services">Услуги</a>
+            <a href="#update">Обновление</a>
+        </nav>
     </header>
 
-    <nav>
-        <a href="#home">Главная</a>
-        <a href="#about">О нас</a>
-        <a href="#services">Услуги</a>
-        <a href="#contact">Контакты</a>
-    </nav>
+    
 
     <main>
-        <section id="home">
-            <h2>Главная страница</h2>
-            <p>Это основной контент сайта. Здесь можно разместить любую информацию, которую вы хотите показать посетителям.</p>
-        </section>
+        <div id="schedule">
+            <h2 id="scheduletxt">Рассписание</h2>
+            <ol id="para">
+                <li id="first"></li>   
+                <li id="second"></li>
+                <li id="third"></li>
+                <li id="fourth"></li>
 
-        <section id="about">
-            <h2>О нас</h2>
-            <p>Здесь вы можете рассказать о себе или своей компании.</p>
-        </section>
+            </ol>
+        </div>
 
-        <section id="services">
-            <h2>Наши услуги</h2>
-            <p>Описание предлагаемых услуг или товаров.</p>
-        </section>
+        <div id="services">
+            <h2>Текст</h2>
+            <p>Текст</p>
+        </div>
 
-        <section id="contact">
-            <h2>Контакты</h2>
-            <p>Свяжитесь с нами по адресу электронной почты: invermoon@mail.ru</p>
-        </section>
+        <div id="update">
+            <h2>Последнее обновление</h2>
+            
+        </div>
     </main>
 
     <footer>
-        <p>&copy; 2024 Мой сайт. Все права защищены.</p>
+        <p>&copy; 2024 Site by Lazarev Vladimir</p>
     </footer>
 
 </body>
