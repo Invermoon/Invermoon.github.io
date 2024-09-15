@@ -120,5 +120,71 @@
 changeContent();
 setInterval(changeContent, 3600000); // 3600000 миллисекунд = 1 час
     </script>
+    <script>
+        function changeContent() {
+    const daysOfWeek = {
+        0: 'Выходной',
+        1: 'Русский язык',
+        2: 'КЯиЛ',
+        3: 'Математика',
+        4: 'Физическая культура',
+        5: 'Математика',
+        6: 'Выходной',
+    };
+
+    const today = new Date();
+    const dayOfWeek = today.getDay();
+
+    const block = document.getElementById('second');
+    block.textContent = daysOfWeek[dayOfWeek];
+}
+
+changeContent();
+setInterval(changeContent, 3600000); // 2 пара
+    </script>
+    <script>
+        function changeContent() {
+    const daysOfWeek = {
+        0: 'Выходной',
+        1: 'География',
+        2: 'Биология',
+        3: 'Химия',
+        4: 'Русский язык',
+        5: 'Всемирная история',
+        6: 'Выходной',
+    };
+
+    const today = new Date();
+    const dayOfWeek = today.getDay();
+
+    const block = document.getElementById('third');
+    block.textContent = daysOfWeek[dayOfWeek];
+}
+
+changeContent();
+setInterval(changeContent, 3600000); // 3 пара
+    </script>
+    <script>
+        function changeContent() {
+    const daysOfWeek = {
+        0: 'Выходной',
+        1: 'Физическая культура',
+        2: 'История Казахстана',
+        3: 'Кураторский час',
+        4: 'Графика и проектирование',
+        5: '',
+        6: 'Выходной',
+    };
+
+    const today = new Date();
+    const dayOfWeek = today.getDay();
+
+    const block = document.getElementById('fourth');
+    block.textContent = daysOfWeek[dayOfWeek];
+}
+
+changeContent();
+setInterval(changeContent, 3600000); // 4 пара
+    </script>
 </body>
 </html>
